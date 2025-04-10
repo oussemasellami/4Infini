@@ -1,0 +1,49 @@
+
+<!--<table border="3">
+    <tr>
+    <td>Id</td>
+    <td>name</td>
+    <td>Address</td>
+    <td>image</td>
+    <td>status</td>
+    </tr>
+    <tr *ngFor="let i of listResidences">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td> {{i.address | uppercase}}</td>
+        <td><img [src]="i.image" alt="residence1" width="100" height="100"></td>
+        <td>{{i.status}}</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<input type="text" [(ngModel)]="search">
+<div *ngFor="let r of listResidences">
+    <div *ngIf="search == r.name">
+        <ul>
+            <li>
+                {{r.id}}
+            </li>
+            <li>
+                {{r.address}}
+            </li>
+        </ul>
+
+    </div>
+
+</div>-->
+<label for="">Recherche</label>
+<input type="text" [(ngModel)]="search">
+
+<div class="row">
+<div *ngFor="let i of searchlocation()" class="card m-3" style="width: 18rem;">
+    <img [src]="i.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{i.name}}</h5>
+      <p class="card-text">{{i.address}}</p>
+      <p class="card-text">{{i.status}}</p>
+      <a href="#" class="btn btn-primary" (click)="showlocation(i)">show location</a>
+    </div>
+  </div>
+</div>
