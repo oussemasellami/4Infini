@@ -10,7 +10,7 @@ const pchild:Routes=[
       {path:"listpartie",component:ListpartieComponent}
 
     ]},
-   // {path:"**",component:NotfoundComponent}
+    {path:"**",component:NotfoundComponent}
 ]
 
 @NgModule({

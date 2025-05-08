@@ -46,6 +46,7 @@
       <a href="#" class="btn btn-primary" (click)="showlocation(i)">show location</a>
       <button class="btn btn-danger" (click)="deleteResidence(i.id)">Delete</button>
       <button class="btn btn-danger" [routerLink]="['/details',i.id]">Details</button>
+      <button class="btn btn-danger" [routerLink]="['/update',i.id]">update</button>
     </div>
   </div>
 </div>

@@ -1,2 +1,9 @@
 <p>detailsresidence works!</p>
-{{id}}
+{{ id }}
+<br>
+
+<img [src]="listresidence.image" alt="img" width="70" height="70">
+<br>
+{{ listresidence.name }}
+<br>
+<button class="btn btn-primary" [routerLink]="['/residence']">retour vers residence</button>

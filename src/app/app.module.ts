@@ -20,6 +20,7 @@ import { PartieComponent } from './partie/partie.component';
 import { ListpartieComponent } from './partie/listpartie/listpartie.component';
 import { PartieModule } from './partie/partie/partie.module';
 import { DetailsresidenceComponent } from './detailsresidence/detailsresidence.component';
+import { UpdateComponent } from './update/update.component';
 
 
 
@@ -34,6 +35,7 @@ import { DetailsresidenceComponent } from './detailsresidence/detailsresidence.c
     FormulaireComponent,
     NotfoundComponent,
     DetailsresidenceComponent,
+    UpdateComponent,
    
   
   ],

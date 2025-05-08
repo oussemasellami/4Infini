@@ -25,8 +25,8 @@ urlresidence="http://localhost:3000/residences"
     return this.http.get<Residence[]>(this.urlresidence)
   }
 
-  getbyidresidence(id:any):Observable<Residence[]>{
-    return this.http.get<Residence[]>("http://localhost:3000/residences"+"/"+id)
+  getbyidresidence(id:any):Observable<Residence>{
+    return this.http.get<Residence>("http://localhost:3000/residences"+"/"+id)
   }
   deleteresidence(id:any):Observable<Residence[]>{
     return this.http.delete<Residence[]>("http://localhost:3000/residences"+"/"+id)

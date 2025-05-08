@@ -8,6 +8,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { DetailsresidenceComponent } from './detailsresidence/detailsresidence.component';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { PartieComponent } from './partie/partie.component';
+import { UpdateComponent } from './update/update.component';
 
 const r:Routes=[
 
@@ -17,7 +18,11 @@ const r:Routes=[
   {path:"addresidence",component:FormulaireComponent},
  
   {path:"details/:id",component:DetailsresidenceComponent},
+  {path:"update/:ide",component:UpdateComponent},
  //{path:"**",component:NotfoundComponent}
+
+ //ghedamsi mohamed aziz+5
+ //feriel ben mamia+5
 ]
 
 

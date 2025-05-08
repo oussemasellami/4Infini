@@ -1,0 +1,62 @@
+<p>update works!</p>
+{{id}}
+
+<p>formulaire works!</p>
+<div class="container">
+<form [formGroup]="addform">
+
+   <!--- <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Id</span>
+        </div>
+        <input type="text" aria-label="First name" formControlName="id" class="form-control">
+      </div>
+      <div class="alert alert-danger" *ngIf="addform.get('id')?.invalid && addform.get('id')?.touched">
+            id is required
+      </div>-->
+<br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Name</span>
+        </div>
+        <input type="text" aria-label="First name" formControlName="name" class="form-control">
+      </div>
+
+      <div class="alert alert-danger" *ngIf="name?.errors?.['minLength']">
+        id is required
+  </div>
+<br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">address</span>
+        </div>
+        <input type="text" aria-label="First name" formControlName="address" class="form-control">
+      </div>
+
+      <div class="alert alert-danger" *ngIf="addform.get('address')?.invalid && addform.get('address')?.touched">
+        address is required
+  </div>
+<br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">image</span>
+        </div>
+        <input type="text" aria-label="First name" formControlName="image" class="form-control">
+      </div>
+<br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">status</span>
+        </div>
+        <input type="text" aria-label="First name" formControlName="status" class="form-control">
+      </div>
+      <div class="alert alert-danger" *ngIf="addform.get('status')?.invalid && addform.get('status')?.touched">
+        status = disponible
+  </div>
+
+<br>
+      <button class="btn btn-primary" (click)="update()" [disabled]="addform.invalid">save</button>
+
+
+</form>
+</div>
