@@ -1,0 +1,18 @@
+{
+  "residences": [
+    {
+      "id": "1",
+      "name": "El fel",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": "6a88",
+      "name": "aliiiii",
+      "address": "Az",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "disponible"
+    }
+  ]
+}

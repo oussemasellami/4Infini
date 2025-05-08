@@ -44,6 +44,12 @@
       <p class="card-text">{{i.address}}</p>
       <p class="card-text">{{i.status}}</p>
       <a href="#" class="btn btn-primary" (click)="showlocation(i)">show location</a>
+      <button class="btn btn-danger" (click)="deleteResidence(i.id)">Delete</button>
+      <button class="btn btn-danger" [routerLink]="['/details',i.id]">Details</button>
     </div>
   </div>
 </div>
+<br>
+<button class="btn btn-primary" (click)="calucl()">Calcul</button>
+
+la somme :{{somme}}
